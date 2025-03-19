@@ -16,6 +16,9 @@
     z-index: 1000;
 }
 
+
+
+
 .menu-bar {
     display: none;
 }
@@ -30,8 +33,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    height: 9rem;
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+    
 }
+
+
 
 
 .conetenedor-nav img {
@@ -45,7 +54,7 @@
     padding-right: 2rem;
     font-family: var(--Textosecundario);
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: black;
     margin-left: 1.5rem;
@@ -355,4 +364,14 @@ ul li:hover ul.dropdown {
     }
 
    
+}
+
+.h3{
+
+    display: flex;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
 }
