@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J3O Motor</title>
+    <link rel="stylesheet" href="../css/cssBusqueda/busqueda.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/borderbox.css">
+    <link rel="stylesheet" href="../css/Colores.css">
+    <link rel="stylesheet" href="../css/Fonts.css">
+    <link rel="stylesheet" href="../css/StyleHeader.css">
+    <link rel="stylesheet" href="../css/SyleFooter.css">
+    <script src="../js/llamarHeader.js"></script>
+    <script src="../js/llamarFooter.js"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu-bar">
+            <a class="btn-menu" href="javascript:void(0)" id="btnMenu">
+                <span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                  </svg>
+                </span>
+                menu
+            </a>
+        </div>
+        <section class="navegacion">
+  
+            <div class="conetenedor-nav">
+  
+                <img class="logo" src="../img/Logo-mejor.png" alt="" />
+  
+                <nav class="nav">
+  
+                    <div class="opcion">
+                        <a href="../html/index.html">Inicio</a>
+                   </div>                   
+  
+                   <div class="container-list">
+                     
+                        <ul>
+                            <li >
+                                <a href="">Vehiculos</a>
+                                <ul class="dropdown">
+                                    <li><a href="../html/Sedan.html">Sedan</a></li>
+                                    <li><a href="../html/Hatchback.html">Hatchback</a></li>
+                                    <li><a href="../html/Pickups.html">Pickups</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                   </div>
+  
+                   
+                    <div>
+                        <a href="../html/TestDrive.html">Prueba de Manejo</a>
+                    </div>
+  
+                    <div class="opcion">
+                        <a href="../html/Cotizacion.html">Cotiza</a>
+                    </div>
+                     
+                    <div class="opcion">
+                        <a href="../html/Nosotros.html">Nosotros</a>  
+                    </div>
+  
+                    <div class="opcion">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 16v.01" />
+                            <path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+                        </svg>
+                        <a href="../html/contacto.html">Asistencia</a>                      
+                        
+                    </div>
+      
+                    <div class="opcion">
+                       
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+                        <a href="../html/Busqueda.html">Busqueda</a>
+                           
+                    </div>
+
+                </nav>   
+  
+            
+                
+            </div>
+            
+        </section>
+  
+  
+  
+    </header>
+   
+
+    <div class="contenedor-principal">
+        <header>
+            <h1>Bienvenido a J3OMotors</h1>
+            <p>Descubre nuestro catálogo de vehículos y encuentra el tuyo con facilidad.</p>
+        </header>
+
+        <!-- Barra de búsqueda -->
+        <div class="barra-busqueda">
+            <input type="text" placeholder="¿Qué auto estás buscando?">
+            <button>Buscar</button>
+        </div>
+
+        <!-- Sección de Búsquedas Populares y Centro de Ayuda -->
+        <div class="contenedor-ayuda">
+            <!-- Búsquedas Populares a la izquierda -->
+            <div class="busquedas-populares">
+                <h3>Búsquedas Populares</h3>
+                <div class="items-busqueda">
+                    <span class="item-busqueda">Chevrolet</span>
+                    <span class="item-busqueda">Ford</span>
+                    <span class="item-busqueda">BMW</span>
+                    <span class="item-busqueda">Audi</span>
+                    <span class="item-busqueda">Toyota</span>
+                    <span class="item-busqueda">Honda</span>
+                    <span class="item-busqueda">Nissan</span>
+                    <span class="item-busqueda">Volkswagen</span>
+                    <span class="item-busqueda">Mazda</span>
+                </div>
+            </div>
+
+            <!-- Línea de separación -->
+            <hr class="separador">
+
+            <!-- Centro de Ayuda a la derecha -->
+            <div class="centro-ayuda">
+                <h2>Centro de Ayuda</h2>
+                <div class="tarjetas-servicio">
+                    <!-- Recuadro de Contáctanos -->
+                    <div class="tarjeta-servicio">
+                        <a href="contacto.html" class="enlace-tarjeta">
+                            <div class="icono-tarjeta">Llamanos</div>
+                            <h3>Contáctanos</h3>
+                        </a>
+                    </div>
+
+                    <!-- Recuadro de Preguntas Frecuentes -->
+                    <div class="tarjeta-servicio">
+                        <a href="faq.html" class="enlace-tarjeta">
+                            <div class="icono-tarjeta">Preguntas Frecuentes</div>
+                           
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="contacatanos">
+            <h4>Contactanos</h4>
+
+            <a href="#">Atencion al Cliente.</a>
+            <a href="#">Contactanos</a>
+            <a href="#">WhatsApp</a>
+
+        </div>
+
+        <div class="compras">
+            <h4>Compras</h4>
+            <a href="#">Solicita Cotizacion</a>
+            <a href="#">Promociones</a>
+            <a href="#">Personaliza</a>
+        </div>
+
+        <div class="legales">
+            <h4>legales</h4>
+            <a href="#">Aviso de provacidad.</a>
+            <a href="#">Legales</a>
+            <a href="#">Terminos y condiciones</a>
+        </div>
+
+        <div class="Social">
+
+           
+            <h4>Social</h4>
+           
+
+            <a class="" href="#">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--primario)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+
+            <a href="#"> 
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--primario)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                    <path d="M10 9l5 3l-5 3z" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--primario)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
+            </a>
+
+            <a href="#">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--primario)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+            </a>
+
+            <h3>@Todos los Derechos Reservados</h3>
+        </div>
+
+  
+    </footer>
+</body>
+<script src="../js/MenuResponcive.js"></script>
+<script src="../js/Navfija.js"></script>
+</html>

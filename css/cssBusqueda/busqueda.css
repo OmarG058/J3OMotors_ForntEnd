@@ -1,0 +1,193 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que ocupen toda la altura de la ventana */
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que ocupen toda la altura de la ventana */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--Textosecundario);
+}
+
+
+/* Contenedor Principal */
+.contenedor-principal {
+    text-align: center;
+    padding: 50px 20px;
+    flex:1;
+    margin-top: 127.99px/*para que se adpte a la fijacion del header cuando hacemos scroll, para que el contenido no quede debajo*/    
+}
+
+/* Encabezado */
+header h1 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.barra-busqueda input {
+    width: 600px; /* Barra de búsqueda más grande */
+    padding: 15px;
+    font-size: 2rem;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.barra-busqueda input:focus {
+    border: 2px solid rgb(242,242,242);
+    box-shadow: 0 0 10px rgba(254, 205, 8, 0.2);
+}
+
+.barra-busqueda button {
+    padding: 20px 30px;
+    background-color:var(--secundario);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 30%;
+}
+
+.barra-busqueda button:hover {
+    background-color: var(--secundario2) 
+}
+
+/* Contenedor de Ayuda */
+.contenedor-ayuda {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Búsquedas Populares (izquierda) */
+.busquedas-populares {
+    width: 50%;
+    text-align: left;
+}
+
+.busquedas-populares h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.items-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centrado de los nombres */
+}
+
+.item-busqueda {
+    font-size: 1.7rem;
+    color: #555;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.item-busqueda:hover {
+    color: var(--secundario2);
+    font-weight: bold;
+}
+
+/* Centro de Ayuda (derecha) */
+.centro-ayuda {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.centro-ayuda h2 {
+    font-size: 2rem;
+    color: var(--negro);
+    margin-bottom: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Tarjetas de servicio */
+@media (min-width: 768px) {
+    .tarjetas-servicio {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+}
+.tarjeta-servicio {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Recuerda ajustado para que sea la mitad del tamaño */
+    padding: 15px;  /* Reducir el padding para hacer los recuadros más pequeños */
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100px; /* Definir una altura fija para los recuadros */
+}
+
+/* Hacer todo el recuadro clickeable */
+.enlace-tarjeta {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Icono de la tarjeta */
+.icono-tarjeta {
+    font-size: 2.4rem; /* Ajusta el tamaño del icono */
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Estilos de Transiciones */
+.tarjeta-servicio:hover .icono-tarjeta {
+    transform: scale(1.1);
+}
+
+.barra-busqueda input:focus, .barra-busqueda button:hover {
+    transition: all 0.3s ease;
+    
+}

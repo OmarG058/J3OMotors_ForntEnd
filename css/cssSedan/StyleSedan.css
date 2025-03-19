@@ -1,0 +1,42 @@
+main{
+    margin-top: 129.99px
+}
+
+@media (min-width: 1253px) {
+    .Contenido{
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+        margin: 0 auto; /*para centrar el contenedor principal*/
+        margin-top: 200.99px
+    }
+}
+
+.contenedor-elementos{
+    
+    text-align: justify;
+    border: 1px solid var(--primario);   
+    overflow: hidden; /* Recorta el contenido que se sale del contenedor */ /*para que no exista un deborde de contenido*/
+    background-color: var(--blanco);
+    margin-top: 1rem;
+    border-radius: 1.2rem;
+}
+
+.contenedor-elementos img {
+    width: auto;
+    height: 15rem;
+}
+
+
+.contenedor-elementos p{
+    font-family: var(--Textosecundario);
+    margin: 1rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.contenedor-elementos>p:nth-child(4){
+    font-weight: 300;
+}
+

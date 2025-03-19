@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: var(--Textosecundario);
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco)
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 190px;
+}
+
+.contact-container h1 {
+    color: var(--secundario2);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+/* Estilos de los formularios */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--blanco);
+    color: #333;
+    box-sizing: border-box; /* Asegura que los elementos no se desborden */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--secundario2);
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Estilos de los radio buttons */
+.radio-group {
+    display: flex;
+    gap: 15px;  /* Espacio entre los radio buttons */
+    margin-bottom: 20px;
+    justify-content: center;  /* Centra los radio buttons y labels */
+    align-items: center;  /* Alinea verticalmente los radio buttons y labels */
+}
+
+.radio-group input {
+    margin-right: 8px;  /* Deja espacio entre el radio button y el texto */
+}
+
+/* Estilos del botón */
+button {
+    background-color: rgb(254,205,8);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color:var(--secundario2)
+}
+
+.privacy-notice {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.privacy-notice a {
+    color: rgb(254,205,8);
+    text-decoration: none;
+}
+
+.privacy-notice a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 30px;
+        padding: 20px;
+        margin-top: 127.99px
+    }
+
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container p {
+        font-size: 1rem;
+    }
+
+    input, select, textarea, button {
+        padding: 12px;
+    }
+
+    /* Radio buttons en columna en pantallas pequeñas */
+    .radio-group {
+        flex-direction: column; /* Los radio buttons estarán en columna */
+        align-items: flex-start;
+    }
+
+    .radio-group input {
+        margin-right: 0;  /* Elimina el margen derecho */
+        margin-bottom: 8px; /* Espaciado entre los radio buttons */
+    }
+
+    .radio-group label {
+        margin-bottom: 8px; /* Espaciado con los radio buttons */
+    }
+}

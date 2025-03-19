@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+    <link rel="stylesheet" href="../css/cssCotizacion/styleCotizacion.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/borderbox.css">
+    <link rel="stylesheet" href="../css/Colores.css">
+    <link rel="stylesheet" href="../css/Fonts.css">
+   
+    <script src="../js/llamarFooter.js"></script>
+    <link rel="stylesheet" href="../css/StyleHeader.css">
+    <link rel="stylesheet" href="../css/SyleFooter.css">
+    <script src="../js/selectorPruebaManejo.js"></script>
+    <script src="../js/ValidarPruebaManejo.js"></script>
+    <script src="../js/ConfirmacionEnvio.js"></script>
+    <script src="../js/LimpiarForm.js"></script>
+   
+    
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu-bar">
+            <a class="btn-menu" href="javascript:void(0)" id="btnMenu">
+                <span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                  </svg>
+                </span>
+                menu
+            </a>
+        </div>
+        <section class="navegacion">
+  
+            <div class="conetenedor-nav">
+  
+                <img class="logo" src="../img/Logo-mejor.png" alt="" />
+  
+                <nav class="nav">
+  
+                    <div class="opcion">
+                        <a href="../html/index.html">Inicio</a>
+                   </div>                   
+  
+                   <div class="container-list">
+                     
+                        <ul>
+                            <li >
+                                <a href="">Vehiculos</a>
+                                <ul class="dropdown">
+                                    <li><a href="../html/Sedan.html">Sedan</a></li>
+                                    <li><a href="../html/Hatchback.html">Hatchback</a></li>
+                                    <li><a href="../html/Pickups.html">Pickups</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                   </div>
+  
+                   
+                    <div>
+                        <a href="../html/TestDrive.html">Prueba de Manejo</a>
+                    </div>
+  
+                    <div class="opcion">
+                        <a href="../html/Cotizacion.html">Cotiza</a>
+                    </div>
+                     
+                    <div class="opcion">
+                        <a href="../html/Nosotros.html">Nosotros</a>  
+                    </div>
+  
+                    <div class="opcion">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 16v.01" />
+                            <path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+                        </svg>
+                        <a href="../html/contacto.html">Asistencia</a>                      
+                        
+                    </div>
+      
+                    <div class="opcion">
+                       
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+                        <a href="../html/Busqueda.html">Busqueda</a>
+                           
+                    </div>
+
+                </nav>   
+  
+            
+                
+            </div>
+            
+        </section>
+  
+  
+  
+    </header>
+    
+    <main class="contenido">
+
+        <div class="titulo">
+            <h3>Solicita una Cotización</h3>
+        </div>
+
+        <div class="contenedor-forms">
+
+            <form action="" class="form-Datos-V">
+
+                <fieldset class="fil-V">
+
+                    <label for="">Selecciona un modelo</label>
+
+                    <select class="select-V" name="Autos" id="vehicleSelect">
+                        <option value="">Vehículos</option>
+                        <option value="colorado">Colorado 2024</option>
+                        <option value="cheyenne">Chevrolet Cheyenne</option>
+                        <option value="aveo">Aveo 2025</option>
+                        <option value="vdrive">Nissan V-Drive</option>
+                        <option value="versa">Nissan Versa</option>
+                        <option value="gti">Volkswagen GTI</option>
+                    </select>
+
+                    <div>
+                        <img id="vehicleImage" src="../img/Sedan/2025-aveo-sedan-jellybean-v2.avif" alt="">
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <form action="" class="form-Datos-U">
+
+                <fieldset class="fil-U">
+
+
+                    <div class="form-container">
+
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="estado">ESTADO *</label>
+                                <select id="estado">
+                                    <option value="Durango">DURANGO</option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <label for="ciudad">CIUDAD O ZONA *</label>
+                                <select id="ciudad">
+                                    <option value="Gomez Palacio">Gomez Palacio</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="distribuidor">DISTRIBUIDOR *</label>
+                                <select id="distribuidor">
+                                    <option value="Misol Automotriz">Gomez Palacio - Misol Automotriz</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="nombre">NOMBRE(S) *</label>
+                                <input type="text" id="nombre" placeholder="ej. Juan">
+                            </div>
+                            <div class="form-item">
+                                <label for="apellido">APELLIDO(S) *</label>
+                                <input type="text" id="apellido" placeholder="ej. Lopez">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="correo">CORREO *</label>
+                                <input type="email" id="correo" placeholder="tu@correo.com">
+                            </div>
+                            <div class="form-item">
+                                <label for="telefono">TELÉFONO *</label>
+                                <input type="tel" id="telefono" placeholder="(LADA) 000 00 00">
+                            </div>
+                        </div>
+
+                        <!-- financiamiento -->
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="financiamiento">¿TE INTERESA FINANCIAR EL VEHÍCULO? *</label>
+                                <select id="financiamiento">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="si">Sí, me interesa</option>
+                                    <option value="no">No, no me interesa</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="engancheField" style="display:none;" class="form-row">
+                            <div class="form-item">
+                                <label for="enganche">Cantidad de Enganche *</label>
+                                <input type="number" id="enganche" placeholder="Ej. 50000">
+                            </div>
+                            <div class="form-item">
+                                <label for="plazos">Plazos *</label>
+                                <select id="plazos">
+                                    <option value="">Selecciona los plazos</option>
+                                    <option value="12">12 meses</option>
+                                    <option value="24">24 meses</option>
+                                    <option value="36">36 meses</option>
+                                    <option value="48">48 meses</option>
+                                    <option value="60">60 meses</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="comentarios">COMENTARIOS</label>
+                                <textarea id="comentarios" rows="10"></textarea>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <Button class="boton-E" type="submit">Enviar > </Button>
+                            <Button class="boton-Limpiar" type="submit">Borrar </Button>
+                        </div>
+
+
+                    </div>
+
+
+                </fieldset>
+            </form>
+
+        </div>
+
+
+
+    </main>
+
+    <div id="Footer"></div> <!-- Aquí se insertará el Footer -->
+
+</body>
+<script src="../js/MenuResponcive.js"></script>
+<script src="../js/Navfija.js"></script>
+<script src="../js/Financiamiento.js"></script>
+</html>

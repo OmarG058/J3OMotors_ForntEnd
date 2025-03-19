@@ -1,0 +1,41 @@
+body{
+    font-family: var(--Textosecundario);
+}
+
+main{
+   
+    width: 70%;
+   margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-secciones {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+
+.contenedor-secciones .contenedor-formularios {
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   
+}
